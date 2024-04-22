@@ -11,7 +11,9 @@ This is another section.
 
 \section{Network-based Intrusion Detection Systems}
 
-This is another section. 
+Network-based intrusion detection systems fall into one of two main categories: Signature-based systems and Anomaly-based systems. Signature-based detection uses rules that tell the system what to look for, where it examines network traffic, compares it to known signatures, and generates an alert when a match is made. Anomaly-based detection looks at both network and computer intrusions and misuse by monitoring system activity and classifying it as either normal or anomalous.
+
+In order to assess accuracy and false positive rates, rules created by the MSSP are either introduced to the production environment directly or first added to a test environment. Commercial rule sets are added straight into production since it is thought that a sufficient degree of quality control has already been applied to them. After going live, the MSSP only modifies its own set of exclusive rules; the commercial regulations are left alone and are only removed by other means. When a rule in the production environment matches an incoming packetlogically, an alert is triggered. Ultimately, a warning is only combined with other connected alerts into an incident if the analysts in the Security Operations Center (SOC) determine that it is sufficiently serious. Incidents are then thoroughly investigated by the security analysts.
 
 \section{Change from Signature to Anomaly}
 \section{NIDS Syntax}
